@@ -28,9 +28,6 @@ public:
 
     // Constructor
     tree();
-    
-    //Destructor
-    void deallocateTree(node* currentNode);
 
     //Converts chars to int for array indexing
     int charToInt(char letter);
