@@ -14,21 +14,6 @@ tree::tree() {
     root = new node();
 }
 
-//destructor
-void tree::deallocateTree(node* currentNode) {
-    if(!currentNode) {
-        return;
-    }
-    for(int i = 0; i < 31; i++) {
-        if(currentNode->next[i] != nullptr) {
-            deallocateTree(currentNode->next[i]);
-        }
-    }
-    delete currentNode;
-}
-
-
-
 
 // charToInt converts given characters to a set int for indexing
 int tree::charToInt(char letter)
